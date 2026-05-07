@@ -1,78 +1,97 @@
 # 🔍 Arbitrage Monitor (B-E-S)
 
-A system for monitoring arbitrage opportunities between trading sources with automated Telegram notifications.
+Система мониторинга арбитражных возможностей между торговыми источниками с автоматическими уведомлениями в Telegram.
 
-## 🧠 Description
+## 🧠 Описание
 
-This project is a tool for tracking price differences between multiple sources and identifying potential arbitrage opportunities in real time.
+Проект представляет собой инструмент для отслеживания разницы цен между различными источниками и выявления потенциальных арбитражных ситуаций в реальном времени.
 
-The main goal is to minimize trader reaction time through automated market analysis and instant notifications.
+Основная цель — минимизировать время реакции трейдера за счёт автоматического анализа рынка и мгновенных уведомлений.
 
+---
 
-## ⚙️ How the system works
+## ⚙️ Как работает система
 
-* Fetching актуальные prices via APIs from multiple sources
-* Processing and comparing data
-* Calculating spread between platforms
-* Checking conditions (arbitrage threshold)
-* Sending Telegram notification when triggered
+* Получение актуальных цен через API различных источников
+* Обработка и сравнение данных
+* Расчет спреда между площадками
+* Проверка условий (порог арбитража)
+* Отправка уведомления в Telegram при срабатывании
 
+---
 
-## 🚀 Key features
+## 🚀 Основные возможности
 
-* 📡 Market data collection via API
-* 🧮 Arbitrage spread calculation between sources
-* 🔔 Telegram integration for notifications
-* ⚙️ Configurable trigger thresholds
-* 🔄 Continuous real-time monitoring
-* 🧾 System logging
+* 📡 Сбор рыночных данных через API
+* 🧮 Расчет арбитражного спреда между источниками
+* 🔔 Интеграция с Telegram для уведомлений
+* ⚙️ Настройка порогов срабатывания
+* 🔄 Непрерывный мониторинг в реальном времени
+* 🧾 Логирование работы системы
 
+---
 
-## 📲 Telegram notifications
+## 📲 Telegram уведомления
 
-The project includes a notification system that:
+Реализована система уведомлений, которая:
 
-* sends alerts when a defined spread threshold is reached
-* enables fast reaction to market opportunities
-* can be extended for more complex strategies
+* отправляет сигнал при достижении заданного спреда
+* позволяет оперативно реагировать на возможности
+* может быть расширена под сложные стратегии
 
+---
 
-## 🛠 Technologies
+## 🛠 Технологии
 
 * Python
-* External API integrations
+* Работа с внешними API
 * Telegram Bot API
-* Data processing and logging
+* Логирование и обработка данных
 
+---
 
-## 📊 Practical value
+## 📊 Практическая ценность
 
-This project demonstrates:
+Проект демонстрирует:
 
-* building real-time monitoring systems
-* working with external APIs
-* processing financial data
-* automation of alert systems
+* построение систем мониторинга в реальном времени
+* интеграцию с внешними API
+* работу с финансовыми данными
+* автоматизацию уведомлений
 
-Can be used as:
+Может использоваться как:
 
-* a trading support tool
-* a base for a trading bot
-* a component of a larger arbitrage system
+* инструмент для трейдинга
+* база для создания торгового бота
+* часть более сложной арбитражной системы
 
+---
 
-## ⚠️ Limitations
+## ⚠️ Ограничения
 
-* Does not execute trades automatically
-* Works as a signal/alert system
-* Requires additional development for production use (scalability, fault tolerance)
+* Не выполняет сделки автоматически
+* Работает как система сигналов
+* Требует доработки для production (масштабирование, отказоустойчивость)
 
+---
 
-## 🔧 Possible improvements
+## 🔧 Возможные улучшения
 
-* Support for multiple trading pairs
-* Integration with multiple exchanges
-* Automated trade execution
-* Web interface
-* Historical analytics
+* Поддержка нескольких торговых пар
+* Работа с несколькими биржами
+* Автоматическое исполнение сделок
+* Веб-интерфейс
+* Историческая аналитика
 
+---
+
+## 📂 Структура проекта
+
+```
+arbi_monitor_B-E-S/
+├── main.py
+├── config.py
+├── services/
+├── utils/
+├── logs/
+```
