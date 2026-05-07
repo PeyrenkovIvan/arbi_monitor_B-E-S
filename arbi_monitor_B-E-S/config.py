@@ -1,8 +1,7 @@
-# Чистый конфиг проекта (без чтения JSON)
 from utils import secrets as sec
 
 # ── Telegram ──────────────────────────────────────────────────────────────────
-TG_ENABLED = True  # True \ False Флаг остаётся здесь, как ты просил
+TG_ENABLED = True  # True \ False Флаг 
 TELEGRAM   = {
     "token": sec.get_bot_token(),  # <-- utils/secrets.py сам читает tg.json
     "chat_id": sec.get_chat_id(),  # <--
